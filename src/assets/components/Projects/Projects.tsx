@@ -1,4 +1,5 @@
 import styles from "./Projects.module.css";
+import { resolveAssetUrl } from "../../../services/api";
 
 interface ProjectItem {
     title: string;
@@ -26,7 +27,7 @@ export function Projects({ title, items }: ProjectsProps) {
                         <div
                             key={index}
                             className={styles.project}
-                            style={{ backgroundImage: `url(${project.imageUrl})` }}
+                            style={{ backgroundImage: `url(${resolveAssetUrl(project.imageUrl)})` }}
                         >
                             <div className={styles.overlay}>
                                 <div className={styles.content}>

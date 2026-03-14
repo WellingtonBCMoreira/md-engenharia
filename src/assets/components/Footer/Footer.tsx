@@ -1,4 +1,5 @@
 import styles from "./Footer.module.css";
+import { resolveAssetUrl } from "../../../services/api";
 
 interface FooterProps {
     logoUrl?: string;
@@ -11,7 +12,7 @@ export function Footer({ logoUrl = "/images/logo.png" }: FooterProps) {
                 <div className={styles.top}>
                     <div className={styles.logo}>
                         <a href="/admin/login" title="Acesso administrativo">
-                            <img src={logoUrl} alt="MD Engenharia" />
+                            <img src={resolveAssetUrl(logoUrl)} alt="MD Engenharia" />
                         </a>
                     </div>
 

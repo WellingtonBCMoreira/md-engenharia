@@ -1,4 +1,5 @@
 import styles from "./About.module.css";
+import { resolveAssetUrl } from "../../../services/api";
 
 interface AboutProps {
     imageUrl: string;
@@ -24,7 +25,7 @@ export function About({
             <div className={styles.interface}>
                 <div className={styles.flex}>
                     <div className={styles.imgSobre}>
-                        <img src={imageUrl} alt="Sobre" />
+                        <img src={resolveAssetUrl(imageUrl)} alt="Sobre" />
                     </div>
 
                     <div className={styles.txtSobre}>

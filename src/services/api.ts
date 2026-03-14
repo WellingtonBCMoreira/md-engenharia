@@ -1,5 +1,16 @@
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
 
+export function resolveAssetUrl(url?: string | null) {
+  if (!url) return "";
+  if (/^(https?:|data:|blob:)/i.test(url)) return url;
+
+  try {
+    return new URL(url, API_URL).toString();
+  } catch {
+    return url;
+  }
+}
+
 export async function uploadImage(file: File) {
   const fileContent = await new Promise<string>((resolve, reject) => {
     const reader = new FileReader();

@@ -1,5 +1,6 @@
 import styles from './Header.module.css';
 import { useState } from 'react';
+import { resolveAssetUrl } from '../../../services/api';
 
 const menuItems = [
   { label: "Inicio", href: "#inicio" },
@@ -24,7 +25,7 @@ export function Header({ logoUrl = "/images/logo.png" }: HeaderProps) {
       <div className={styles.interface}>
         <div className={styles.logo}>
           <a href="#inicio" onClick={handleMenuItemClick}>
-            <img src={logoUrl} alt="Logo MD Engenharia" />
+            <img src={resolveAssetUrl(logoUrl)} alt="Logo MD Engenharia" />
           </a>
         </div>
 

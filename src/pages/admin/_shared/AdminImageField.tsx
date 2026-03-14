@@ -1,7 +1,7 @@
 import { useState, type ChangeEvent } from "react";
 import styles from "./AdminPage.module.css";
 import { IMAGE_OPTIONS } from "./imageOptions";
-import { uploadImage } from "../../../services/api";
+import { resolveAssetUrl, uploadImage } from "../../../services/api";
 
 interface AdminImageFieldProps {
   label: string;
@@ -77,7 +77,7 @@ export function AdminImageField({
 
       {value ? (
         <div className={styles.imagePreview}>
-          <img src={value} alt={label} />
+          <img src={resolveAssetUrl(value)} alt={label} />
         </div>
       ) : null}
     </div>

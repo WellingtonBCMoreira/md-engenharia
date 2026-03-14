@@ -1,4 +1,5 @@
 import styles from "./Hero.module.css";
+import { resolveAssetUrl } from "../../../services/api";
 
 interface HeroProps {
     imageUrl?: string;
@@ -28,7 +29,7 @@ export function Hero({ imageUrl, title, description }: HeroProps) {
 
                 <div className={styles.image}>
                     {imageUrl ? (
-                        <img src={imageUrl} alt={title} className={styles.heroImage} />
+                        <img src={resolveAssetUrl(imageUrl)} alt={title} className={styles.heroImage} />
                     ) : null}
                 </div>
             </div>
