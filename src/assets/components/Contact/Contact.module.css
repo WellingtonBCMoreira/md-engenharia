@@ -1,0 +1,79 @@
+.contact {
+  padding: 0 4% 80px;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 38px;
+  text-align: center;
+}
+
+.title span {
+  color: #00ff08;
+}
+
+.form {
+  max-width: 500px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  background-color: #242424;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 20px 15px;
+  border-radius: 15px;
+  font-size: 18px;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #b5b5b5;
+}
+
+.form input:focus,
+.form input:focus-visible,
+.form textarea:focus,
+.form textarea:focus-visible {
+  background-color: #fff;
+  color: #111;
+  box-shadow: 0 0 0 2px rgba(0, 255, 8, 0.35);
+}
+
+.form textarea {
+  resize: none;
+  max-height: 200px;
+}
+
+.actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.actions button {
+  width: 120px;
+  background-color: #00ff08;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  transition: 0.2s;
+}
+
+.actions button:hover {
+  box-shadow: 0 0 8px #00ff08;
+  transform: scale(1.05);
+}

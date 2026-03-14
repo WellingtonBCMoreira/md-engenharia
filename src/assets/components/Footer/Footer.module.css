@@ -1,0 +1,53 @@
+.footer {
+  padding: 40px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 180px;
+}
+
+.social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #00ff08;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: 0.2s;
+}
+
+.bottom {
+  border-top: 2px solid #00ff08;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.bottom p {
+  color: #fff;
+}
+
+.bottom a {
+  color: #fff;
+  margin-left: 6px;
+}
+
+@media (max-width: 1020px) {
+  .top {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

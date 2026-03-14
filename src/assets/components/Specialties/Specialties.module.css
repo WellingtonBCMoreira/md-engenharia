@@ -1,0 +1,51 @@
+.services {
+  padding: 40px 4%;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  gap: 60px;
+}
+
+.title {
+  font-size: 38px;
+  text-align: center;
+}
+
+.title span {
+  color: #00ff08;
+}
+
+.box {
+  /* color: #fff; */
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 45px;
+  transition: 0.2s;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffffff78;
+}
+
+.box i {
+  font-size: 70px;
+  color: #00ff08;
+}
+
+.box h3 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+@media (max-width: 1020px) {
+  .flex {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,101 @@
+.sobre {
+  padding: 80px 4%;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.imgSobre {
+  flex: 0 1 420px;
+}
+
+.imgSobre img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.txtSobre {
+  flex: 1;
+}
+
+.txtSobre h2 {
+  font-size: clamp(2rem, 3.6vw, 2.5rem);
+  line-height: 1.15;
+  margin-bottom: 30px;
+}
+
+.txtSobre h2 span {
+  color: #00ff08;
+  display: block;
+}
+
+.txtSobre p {
+  margin: 20px 0;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.btnSocial {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.btnSocial button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #00ff08;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+@media (max-width: 1020px) {
+  .sobre {
+    padding: 64px 4%;
+  }
+
+  .flex {
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .txtSobre {
+    width: 100%;
+  }
+
+  .txtSobre h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .sobre {
+    padding: 48px 4%;
+  }
+
+  .txtSobre p {
+    text-align: left;
+  }
+
+  .btnSocial {
+    justify-content: center;
+  }
+
+  .btnSocial button {
+    width: 54px;
+    height: 54px;
+    font-size: 20px;
+  }
+}

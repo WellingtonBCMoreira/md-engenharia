@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "title": "Lorem Ipsum Dolor Sit Amet design TESTE API 3",
+    "description": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. teste API",
+    "imageUrl": "/images/about.jpg"
+  },
+  "about": {
+    "imageUrl": "/images/about.jpg",
+    "title": "MUITO PRAZER,",
+    "highlight": "SOMOS A MD ENGENHARIA.",
+    "paragraphs": [
+      "Somos uma empresa especializada em engenharia eletrica, atuando com projetos, instalacoes e solucoes tecnicas de alta qualidade.",
+      "Acreditamos em eficiencia, seguranca e inovacao para entregar resultados confiaveis e sustentaveis aos nossos clientes."
+    ],
+    "social": {
+      "whatsapp": "https://wa.me/557592022349",
+      "instagram": "https://instagram.com/mdengenharia",
+      "linkedin": "https://linkedin.com/company/mdengenharia"
+    }
+  },
+  "especialties": {
+    "title": "Nossas Especialidades",
+    "items": [
+      {
+        "icon": "bi-lightning-charge",
+        "title": "Projetos Eletricos",
+        "description": "Elaboracao de projetos eletricos residenciais, comerciais e industriais, seguindo normas tecnicas e garantindo eficiencia e seguranca."
+      },
+      {
+        "icon": "bi-plug",
+        "title": "Instalacoes Eletricas",
+        "description": "Execucao de instalacoes eletricas completas, com foco em qualidade, desempenho e conformidade com a legislacao. Teste"
+      },
+      {
+        "icon": "bi-shield-check",
+        "title": "Manutencao e Seguranca",
+        "description": "Manutencao preventiva e corretiva, inspecoes tecnicas e adequacoes para garantir a seguranca das instalacoes."
+      },
+      {
+        "icon": "bi-sun",
+        "title": "Projetos de Energia Solar",
+        "description": "Desenvolvimento e implementacao de sistemas fotovoltaicos para geracao de energia limpa, sustentavel e economica."
+      }
+    ]
+  },
+  "projects": {
+    "title": "NOSSOS PROJETOS",
+    "items": [
+      {
+        "title": "Projeto Eletrico Residencial",
+        "imageUrl": "/images/projeto1.jpg",
+        "description": "Planejamento completo da instalacao eletrica com distribuicao inteligente dos circuitos, seguranca e eficiencia para o uso diario."
+      },
+      {
+        "title": "Sistema Fotovoltaico",
+        "imageUrl": "/images/projeto2.jpg",
+        "description": "Dimensionamento e instalacao de geracao solar para reduzir custos com energia e ampliar a autonomia energetica do cliente."
+      },
+      {
+        "title": "Instalacao Industrial",
+        "imageUrl": "/images/projeto3.jpg",
+        "description": "Execucao tecnica voltada para operacao continua, com foco em desempenho, robustez da infraestrutura e conformidade normativa."
+      }
+    ]
+  },
+  "contact": {
+    "title": "FALE CONOSCO",
+    "subtitle": "Entre em contato para solicitar um orcamento ou tirar duvidas.",
+    "whatsapp": "557592022349",
+    "email": "contato@mdengenharia.com"
+  },
+  "footer": {
+    "logoUrl": "/images/logo.png",
+    "companyName": "MD Engenharia",
+    "email": "contato@mdengenharia.com",
+    "phone": "557592022349",
+    "copyright": "© 2026 MD Engenharia. Todos os direitos reservados. Site desenvolvido por Wellington Batista, Desenvolvedor de Sistemas."
+  }
+}
