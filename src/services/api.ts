@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
 
 export async function uploadImage(file: File) {
   const fileContent = await new Promise<string>((resolve, reject) => {
@@ -35,7 +35,11 @@ export async function getHero() {
   return response.json();
 }
 
-export async function updateHero(data: { imageUrl: string; title: string; description: string }) {
+export async function updateHero(data: {
+  imageUrl: string;
+  title: string;
+  description: string;
+}) {
   const response = await fetch(`${API_URL}/hero`, {
     method: "PUT",
     headers: {
